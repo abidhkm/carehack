@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView android:id="@+id/wish_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Wish Title"
+        android:gravity="center"
+        android:textSize="20dip"
+        android:textColor="@color/darkeBlue"
+        android:textStyle="bold" />
+
+    <TextView android:id="@+id/wish_details"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="24dp"
+        android:text="I wish to "
+        android:gravity="center"
+        android:textSize="16dip"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView android:id="@+id/tags"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Date: "
+            android:gravity="center"
+            android:textSize="16dip"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold" />
+
+        <TextView android:id="@+id/dates"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:text="30-11-2017"
+            android:textSize="16dip"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold" />
+
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/likes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="20 Likes "
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16dip"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/helps"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="40 Helps "
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16dip"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_delete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete wish"
+        android:gravity="center"
+        android:textSize="18dip"
+        android:textColor="@color/darkeBlue"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/helpeees"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="Helpers"
+        android:textColor="@color/darkeBlue"
+        android:textSize="18dip"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+    <android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/list2"
+        android:name="com.miniproject.wishlist.myWishFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        app:layoutManager="LinearLayoutManager"
+        tools:context="com.miniproject.wishlist.myWishFragment"
+        tools:listitem="@layout/listitems" />
+
+
+</LinearLayout>

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteColor"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:layout_width="380dp"
+        android:layout_height="61dp">
+
+        <TextView
+            android:id="@+id/wish_title"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@+id/textView"
+            android:gravity="center"
+            android:text="Medicine"
+            android:textColor="@color/darkeBlue"
+            android:textSize="20dip"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="43dp"
+            android:gravity="center"
+            android:text="Medicine Name:"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16dip"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="53dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:text="Medicine left in hand:"
+
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16dip"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/wish_details"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/textView2"
+            android:gravity="center"
+            android:text="I wish to "
+            android:textColor="@color/darkeBlue"
+            android:textSize="16dip"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="138dp"
+        android:layout_height="0dp"
+
+        android:gravity="bottom"
+        android:visibility="invisible">
+
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab1"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/fab2"
+
+            android:layout_marginEnd="18dp"
+            android:layout_marginLeft="@dimen/fab_margin"
+            android:layout_marginRight="@dimen/fab_margin"
+            android:layout_weight="1"
+            android:src="@drawable/help"
+            android:visibility="visible" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab2"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fab_margin"
+            android:layout_weight="1"
+            android:src="@drawable/like"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="66dp"
+        android:layout_weight="0.28"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Dosage:  "
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16dip"
+            android:textStyle="bold" />
+
+
+
+
+        <TextView
+            android:id="@+id/tags"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Dosage   "
+            android:textColor="@color/darkeBlue"
+            android:textSize="16dip"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:gravity="end"
+            android:text="  Date:"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16dip"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/dates"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/textView4"
+            android:gravity="center"
+            android:text="30-11-2017"
+            android:textColor="@color/darkeBlue"
+            android:textSize="16dip"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/likes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="59dp"
+            android:layout_marginTop="93dp"
+            android:layout_weight="1.06"
+            android:gravity="center"
+            android:text=" "
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16dip"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/helps"
+        android:layout_width="85dp"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="46dp"
+        android:layout_toEndOf="@+id/likes"
+        android:background="@drawable/help"
+        android:gravity="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="16dip"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+
+</LinearLayout>
