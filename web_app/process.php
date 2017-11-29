@@ -3,7 +3,7 @@ session_start();
 //Your authentication key
 
 
-$apiKey = urlencode('SXy0GTNCRGI-MuG9JDUZ72T9CXXSCtpxthyvDa7Mvf');
+$apiKey = urlencode('');
 	
 	// Message details
 	//$numbers = array(8111869640,7012939431);
@@ -11,10 +11,10 @@ $apiKey = urlencode('SXy0GTNCRGI-MuG9JDUZ72T9CXXSCtpxthyvDa7Mvf');
 	//$message = rawurlencode('This is your message otp');
 	$rndno=rand(1000, 9999);
 	$message = urlencode("otp number.".$rndno);
-$url="localhost";
-$username = "id3584107_root";
-$password = "abidhkm432";
-$dbname = "id3584107_has";
+$url="";
+$username = "";
+$password = "";
+$dbname = "";
 $conn = mysqli_connect($url, $username, $password, $dbname);
 // Check connection
 if (!$conn) {
